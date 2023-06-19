@@ -16,6 +16,7 @@ const createServer = (graphQLOptions) =>
     typeDefs,
     resolvers,
     introspection: true,
+    persistedQueries: false,
     dataSources,
     ...(graphQLOptions.kvCache ? kvCache : {}),
   })
