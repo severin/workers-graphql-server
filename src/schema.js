@@ -23,5 +23,6 @@ module.exports = gql`
   type Query {
     pokemon(id: ID!): Pokemon
     ping: String
+    timestamp: String
   }
 `
